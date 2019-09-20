@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11  -g   CMakeFiles/learnSLAM.dir/test/test_readImage.cpp.o  -o ../bin/learnSLAM 

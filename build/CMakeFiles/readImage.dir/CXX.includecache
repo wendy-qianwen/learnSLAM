@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wendy/study/learnSLAM/test/test_readImage.cpp
+opencv2/opencv.hpp
+-
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+boost/algorithm/string.hpp
+-
+
