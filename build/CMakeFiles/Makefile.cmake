@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../CMakeModules/FindG2O.cmake"
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
@@ -34,7 +35,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU-CXX.cmake"
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU.cmake"
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/FindBoost.cmake"
-  "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/FindOpenGL.cmake"
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake"
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/FindPackageMessage.cmake"
   "/snap/clion/83/bin/cmake/linux/share/cmake-3.14/Modules/FindThreads.cmake"
@@ -63,10 +63,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake"
   "/usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake"
   "/usr/local/lib/cmake/Pangolin/PangolinTargets.cmake"
-  "/usr/local/lib/cmake/g2o/g2oConfig.cmake"
-  "/usr/local/lib/cmake/g2o/g2oConfigVersion.cmake"
-  "/usr/local/lib/cmake/g2o/g2oTargets-release.cmake"
-  "/usr/local/lib/cmake/g2o/g2oTargets.cmake"
   "/usr/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/share/OpenCV/OpenCVConfig.cmake"
   "/usr/share/OpenCV/OpenCVModules-release.cmake"
@@ -88,6 +84,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/imageCalibration.dir/DependInfo.cmake"
   "CMakeFiles/readImage.dir/DependInfo.cmake"
   "CMakeFiles/readData.dir/DependInfo.cmake"
   )

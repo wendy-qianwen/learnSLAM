@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named imageCalibration
+
+# Build rule for target.
+imageCalibration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 imageCalibration
+.PHONY : imageCalibration
+
+# fast build rule for target.
+imageCalibration/fast:
+	$(MAKE) -f CMakeFiles/imageCalibration.dir/build.make CMakeFiles/imageCalibration.dir/build
+.PHONY : imageCalibration/fast
+
+#=============================================================================
 # Target rules for targets named readImage
 
 # Build rule for target.
@@ -135,6 +148,33 @@ readData: cmake_check_build_system
 readData/fast:
 	$(MAKE) -f CMakeFiles/readData.dir/build.make CMakeFiles/readData.dir/build
 .PHONY : readData/fast
+
+test/test_imageCalibration.o: test/test_imageCalibration.cpp.o
+
+.PHONY : test/test_imageCalibration.o
+
+# target to build an object file
+test/test_imageCalibration.cpp.o:
+	$(MAKE) -f CMakeFiles/imageCalibration.dir/build.make CMakeFiles/imageCalibration.dir/test/test_imageCalibration.cpp.o
+.PHONY : test/test_imageCalibration.cpp.o
+
+test/test_imageCalibration.i: test/test_imageCalibration.cpp.i
+
+.PHONY : test/test_imageCalibration.i
+
+# target to preprocess a source file
+test/test_imageCalibration.cpp.i:
+	$(MAKE) -f CMakeFiles/imageCalibration.dir/build.make CMakeFiles/imageCalibration.dir/test/test_imageCalibration.cpp.i
+.PHONY : test/test_imageCalibration.cpp.i
+
+test/test_imageCalibration.s: test/test_imageCalibration.cpp.s
+
+.PHONY : test/test_imageCalibration.s
+
+# target to generate assembly for a file
+test/test_imageCalibration.cpp.s:
+	$(MAKE) -f CMakeFiles/imageCalibration.dir/build.make CMakeFiles/imageCalibration.dir/test/test_imageCalibration.cpp.s
+.PHONY : test/test_imageCalibration.cpp.s
 
 test/test_readData.o: test/test_readData.cpp.o
 
@@ -198,8 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... imageCalibration"
 	@echo "... readImage"
 	@echo "... readData"
+	@echo "... test/test_imageCalibration.o"
+	@echo "... test/test_imageCalibration.i"
+	@echo "... test/test_imageCalibration.s"
 	@echo "... test/test_readData.o"
 	@echo "... test/test_readData.i"
 	@echo "... test/test_readData.s"
